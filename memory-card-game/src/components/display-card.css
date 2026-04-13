@@ -1,0 +1,13 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 20vw);
+  gap: 10px;
+
+  grid-template-rows: repeat(3, 200px);
+}
+
+.card-container img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
