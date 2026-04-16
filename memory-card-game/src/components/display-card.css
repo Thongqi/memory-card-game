@@ -1,13 +1,36 @@
 .card-container {
-  display: grid;
-  grid-template-columns: repeat(3, 20vw);
-  gap: 10px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
 
-  grid-template-rows: repeat(3, 200px);
+.card-container > div {
+  border-radius: 10px;
+  width: 200px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.card-container .show {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.416);
+  color: #ffffff85;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-container img {
   object-fit: cover;
   height: 200px;
   width: 100%;
+  border-radius: 10px;
+  font-size: 50px;
+  font-weight: 800;
 }
