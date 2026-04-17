@@ -8,6 +8,8 @@ const spring = {
   stiffness: 300,
 };
 
+const [showingCard, setShowingCard] = useState(null)
+
 export function DisplayCard({
   selected,
   setSelected,
@@ -32,6 +34,11 @@ export function DisplayCard({
 
   function handleClick(id) {
     setCards(shuffle(cards));
+
+    setShowingCard(id)
+    useEffect(()=>{
+      setShowingCard(null)
+    }, 1000)
 
     // if the item is selected before, then reset score, and save the current score as highest score
     if (selected.includes(id)) {
@@ -67,7 +74,7 @@ function Card({ index, imagelink, handleClick, selected }) {
       className="card"
       onClick={handleClick}
     >
-      <div>
+      <div className={showingCard === index? 'show':null}>
         <p>{selected.length + 1}</p>
       </div>
       <img src={imagelink}></img>

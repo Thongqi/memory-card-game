@@ -1,0 +1,8 @@
+.buttongroup{
+    display: flex;
+    gap: 1px;
+    border-radius: 3px;
+    padding:2px;
+    border: 1px solid gainsboro;
+}
+
