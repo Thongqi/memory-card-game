@@ -1,4 +1,4 @@
-import { useCallback, useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import "./display-card.css";
 import { motion } from "motion/react";
 import { ResetContext } from "../App";

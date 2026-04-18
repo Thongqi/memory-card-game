@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://thongqi.github.io/memory-card-game",
+  "homepage": "https://Thongqi.github.io/memory-card-game/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
