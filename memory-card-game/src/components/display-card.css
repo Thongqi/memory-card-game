@@ -2,11 +2,28 @@
   display: flex;
   position: relative;
   flex-wrap: wrap;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+.card-container.blink {
+  animation: blink 300ms ease-in-out 100ms 2 forwards;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .card-container > div {
   border-radius: 10px;
-  width: 200px;
   margin-bottom: 10px;
   margin-right: 10px;
   position: relative;
@@ -20,15 +37,23 @@
   border-radius: 10px;
   background-color: rgba(128, 128, 128, 0.416);
   color: #ffffff85;
-  height: 200px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.card-container p {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.card-container .hide {
+  display: none;
+}
+
 .card-container img {
   object-fit: cover;
-  height: 200px;
   width: 100%;
   border-radius: 10px;
   font-size: 50px;
